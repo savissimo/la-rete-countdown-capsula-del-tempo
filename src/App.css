@@ -1,0 +1,62 @@
+#root {
+  padding: 2rem;
+  text-align: center;
+}
+
+#timer-countdown {
+	font-size: 2rem;
+	display: grid;
+	grid-template: "date" auto "time" auto / 1fr;
+	gap: 1em;
+}
+
+.date, .time {
+	display: flex;
+	justify-content: center;
+}
+
+.date {
+	font-size: 4em;
+	gap: 1em;
+}
+
+.time {
+	gap: .5em;
+}
+
+.labeled-display {
+	display: grid;
+	grid-template: "value" auto "label" auto / auto;
+	align-items: center;
+	line-height: 1.2;
+}
+
+.labeled-display::after {
+	grid-area: label;
+	font-size: .3em;
+	text-transform: uppercase;
+}
+
+.years::after {
+	content: 'Anni';
+}
+
+.months::after {
+	content: 'Mesi';
+}
+
+.days::after {
+	content: 'Giorni';
+}
+
+.hours::after {
+	content: 'Ore';
+}
+
+.minutes::after {
+	content: 'Minuti';
+}
+
+.seconds::after {
+	content: 'Secondi';
+}
