@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Good Times";
+	src: url("/assets/good times rg.otf") format("opentype");
+}
+
 #root {
   padding: 2rem;
   text-align: center;
@@ -29,6 +34,7 @@
 	grid-template: "value" auto "label" auto / auto;
 	align-items: center;
 	line-height: 1.2;
+	font-family: 'Good Times', Arial, Helvetica, sans-serif;
 }
 
 .labeled-display::after {
