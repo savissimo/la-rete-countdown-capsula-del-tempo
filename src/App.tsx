@@ -18,8 +18,8 @@ function App() {
   }, [updateTimer])
 
   return <>
-    <header></header>
-	<section>
+    <header className="hero">La Capsula del Tempo di Vercelli</header>
+	<main>
 		{timeRemaining.isValid
 		? <div id="timer-countdown">
 			<div className="date">
@@ -35,7 +35,18 @@ function App() {
 		</div>
 		: <div>La capsula del tempo è pronta per essere aperta!</div>
 		}
-	</section>
+	</main>
+	<footer>
+		<section className="credits-card-list">
+			<section className="credits-card">
+				<img className="credits-card__image" src="/assets/LaRete.jpg" />
+				<div className="credits-card__title">La Rete - Vercelli</div>
+				<div className="credits-card__info">
+					<a href="https://grandevercelli.it">grandevercelli.it</a>
+				</div>
+			</section>
+		</section>
+	</footer>
   </>
 }
 

@@ -1,10 +1,22 @@
+html {
+  --black: #242424;
+  --white: #ffffff;
+  
+  --blue-dark: #006896;
+  --blue: #47A2C1;
+  --blue-bright: #535bf2;
+  --blue-bright2: #646cff;
+
+  font-size: calc(min(1vw, 1vh) * 1.5 + 10px);
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color: #47A2C1;
-  background-color: #242424;
+  color: var(--blue);
+  background-color: var(--black);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,18 +26,16 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--blue-bright2);
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--blue-bright);
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  place-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -42,12 +52,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--black);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--blue-bright2);
 }
 button:focus,
 button:focus-visible {
