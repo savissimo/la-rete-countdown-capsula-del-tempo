@@ -39,7 +39,7 @@ function App() {
 	<footer>
 		<section className="credits-card-list">
 			<section className="credits-card">
-				<img className="credits-card__image" src="/images/LaRete.jpg" />
+				<img className="credits-card__image" src="images/LaRete.jpg" />
 				<div className="credits-card__title">La Rete - Vercelli</div>
 				<div className="credits-card__info">
 					<a href="https://grandevercelli.it">grandevercelli.it</a>
