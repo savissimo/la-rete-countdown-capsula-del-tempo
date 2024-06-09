@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Good Times";
-	src: url("fonts/good times rg.otf") format("opentype");
+	src: url("/fonts/good times rg.otf") format("opentype");
 }
 
 #root {
