@@ -138,3 +138,15 @@ header.hero {
 .credits-card__info {
 	grid-area: info;
 }
+
+.links-list {
+	display: flex;
+	gap: .5em;
+	justify-content: center;
+	margin-bottom: 1em;
+}
+
+.links-list__item {
+	color: inherit;
+	padding: .25em;
+}

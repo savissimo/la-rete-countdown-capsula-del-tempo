@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { DateTime, Duration, Interval } from 'luxon'
 import './App.css'
+import { Facebook, Instagram, Link, Users } from 'lucide-react';
 
 function App() {
   const [timeRemaining, setTimeRemaining] = useState<Duration>(Duration.fromMillis(0))
@@ -37,6 +38,20 @@ function App() {
 		}
 	</main>
 	<footer>
+		<section className="links-list">
+			<a className="links-list__item" href="https://www.facebook.com/laretevercelli/">
+				<Facebook />
+			</a>
+			<a className="links-list__item" href="https://www.instagram.com/larete.vercelli/">
+				<Instagram />
+			</a>
+			<a className="links-list__item" href="https://www.facebook.com/groups/814801446899473">
+				<Users />
+			</a>
+			<a className="links-list__item" href="https://www.facebook.com/events/1387487155984364">
+				<Link />
+			</a>
+		</section>
 		<section className="credits-card-list">
 			<section className="credits-card">
 				<img className="credits-card__image" src="images/LaRete.jpg" />
