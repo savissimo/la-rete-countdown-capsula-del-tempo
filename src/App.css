@@ -20,11 +20,17 @@ header.hero {
 	font-size: 1.4rem;
 	font-family: 'Good Times', Arial, Helvetica, sans-serif;
 	padding: 1.4rem 0;
-	margin-bottom: 2rem;
 }
 
 #root > main {
+	position: relative;
+	padding: 2rem 0;
 	grid-area: main;
+}
+
+#end-opening {
+	font-size: 1.4rem;
+	font-family: 'Good Times', Arial, Helvetica, sans-serif;
 }
 
 #timer-countdown {

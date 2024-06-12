@@ -18,7 +18,7 @@ function App() {
   }, [updateTimer])
 
   return <>
-    <header className="hero">La Capsula del Tempo di Vercelli</header>
+    <header className="hero">La&nbsp;Capsula&nbsp;del&nbsp;Tempo di&nbsp;Vercelli</header>
 	<main>
 		{timeRemaining.isValid
 		? <div id="timer-countdown">
@@ -33,7 +33,7 @@ function App() {
 				<div className="labeled-display seconds">{timeRemaining?.get('seconds')}</div>
 			</div>
 		</div>
-		: <div>La capsula del tempo è pronta per essere aperta!</div>
+		: <div id="end-opening">La&nbsp;capsula del&nbsp;tempo<br />è pronta per&nbsp;essere&nbsp;aperta!</div>
 		}
 	</main>
 	<footer>
