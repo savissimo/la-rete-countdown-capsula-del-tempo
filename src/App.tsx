@@ -2,9 +2,11 @@ import { useCallback, useEffect, useState } from 'react'
 import { DateTime, Duration, Interval } from 'luxon'
 import './App.css'
 import { Facebook, Instagram, Link, Users } from 'lucide-react';
+import About from './About';
 
 function App() {
   const [timeRemaining, setTimeRemaining] = useState<Duration>(Duration.fromMillis(0))
+  const [showAbout, setShowAbout] = useState<boolean>(false)
 
   const updateTimer = useCallback(() => {
 		const finalDate = DateTime.fromISO('2034-07-02T09:00:00+02:00')
@@ -36,6 +38,8 @@ function App() {
 		</div>
 		: <div id="end-opening">La&nbsp;capsula del&nbsp;tempo<br />è pronta per&nbsp;essere&nbsp;aperta!</div>
 		}
+		<button id="whats-this" onClick={() => setShowAbout(!showAbout)}>Che cos'è questo?</button>
+		{showAbout && <About onClick={() => setShowAbout(false)} />}
 	</main>
 	<footer>
 		<section className="links-list">
