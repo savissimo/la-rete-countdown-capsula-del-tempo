@@ -14,6 +14,6 @@ export default function About(props: Readonly<{ onClick: () => void }>) {
     return <div id="about" onClick={onClick}>
         <img id="about-logo" src="images/Logo.png" />
         <Markdown>{content}</Markdown>
-        <a href="docs/volantino_event_10x10_LARETE.pdf"><img id="about-volantino"src="images/Locandina_10x10_2024-20234.png" /></a>
+        <a href="docs/volantino_evento_10x10_LARETE.pdf" target="_blank" onClick={e => e.stopPropagation()}><img id="about-volantino"src="images/Locandina_10x10_2024-2034.png" /></a>
     </div>
 }
