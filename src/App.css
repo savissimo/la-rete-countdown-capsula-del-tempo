@@ -173,13 +173,16 @@ button {
 	box-shadow: hsl(0, 0%, 0%, 0.5) 0 0 0 9999px;
 	font-size: .8rem;
 	font-family: 'Good Times', Arial, Helvetica, sans-serif;
+	overflow-y: scroll;
 	z-index: 100;
 }
 
 #about-logo {
+	width: 100%;
 	max-width: 8rem;
 }
-
+	
 #about-volantino {
+	width: 100%;
 	max-width: 20rem;
 }
