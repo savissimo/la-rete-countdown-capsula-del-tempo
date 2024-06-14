@@ -7,6 +7,8 @@ html {
   --blue-bright: #535bf2;
   --blue-bright2: #646cff;
 
+  --accent: hsl(from var(--blue) calc(h + 180) 35% 80%);
+
   font-size: calc(min(1vw, 1vh) * 1.5 + 10px);
 }
 
@@ -26,7 +28,7 @@ html {
 
 a {
   font-weight: 500;
-  color: var(--blue-bright2);
+  color: var(--accent);
   text-decoration: inherit;
 }
 a:hover {
